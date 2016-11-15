@@ -53,17 +53,13 @@ body {
 /* additional sections */
 
 #home {
-  background: url(/static/images/home.jpg) no-repeat center center fixed;
-  display: table;
-  height: 740px;
-  position: relative;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  min-width: 100%;
-  min-height: 100%;
+  /*background: url(/static/images/logo.jpg) no-repeat center center fixed;*/
+  background: url(/static/images/logo.jpg) no-repeat center 5vmin;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    height: 90vmin;
 }
 
 #categories {
@@ -208,6 +204,9 @@ footer .glyphicon:hover {
     border: 1px;
     min-height: 325px;
   }
+  #home{
+    top: -60px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -230,7 +229,7 @@ footer .glyphicon:hover {
 }
 
 #products {
-  background-color: lightgrey;
+  background-color: azure;
 }
 
 /*.item img {
@@ -303,7 +302,7 @@ footer .glyphicon:hover {
 .cbp-so-side {
 	width: 45%;
 	float: left;
-	margin: 2%;
+	margin: 1%;
 	/*padding: 10px 4%;*/
 	overflow: hidden;
 	min-height: 12em;

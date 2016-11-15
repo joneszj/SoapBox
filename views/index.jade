@@ -3,38 +3,39 @@ block content
     // first section - Home
     #home.home.img-responsive.col-xs-12
       .text-vcenter
-        h1 Welcome To WiseOwl
-        h3 The West Palm Beach Premier Beer Soap Provider
-        a.btn.btn-default.btn-lg(href='#about') Learn More
+        //- h1 Welcome To WiseOwl
+        //- h3 The West Palm Beach Premier Beer Soap Provider
+        //- a.btn.btn-default.btn-lg(href='#about') Learn More
     // /first section
     // second section - About
     #about.pad-section
       .container
         .row
-          .col-sm-6
-            img(src='images/logo.png', alt='')
-          .col-sm-6.text-center
+          //- .col-md-6
+          //-   img(src='images/logo.jpg', alt='Winter Wood')
+          .col-md-12.text-center
             h2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in sem cras amet.
             p.lead
               | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum metus et ligula venenatis, at rhoncus nisi molestie. Pellentesque porttitor elit suscipit massa laoreet metus.
     // /second section
     // products
-    #cbp-so-scroller.cbp-so-scroller
-      each item in categories
-        hr
-        section.cbp-so-section
-          // bg
-          input(type='hidden', value='/static/images/categories/dolphin.jpg')
-          article.cbp-so-side.cbp-so-side-left
-            a(target='_blank', href='/static/images/categories/dolphin.jpg')
-              h2 !{item.name}
-            p
-              | !{item.description} 
-            p
-              button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Purchase
-          figure.cbp-so-side.cbp-so-side-right
-            a(data-toggle='modal', data-target='#myModal')
-              img(src='' + item.primaryImage + '', alt=''+item.url+'')
+    #products
+      #cbp-so-scroller.cbp-so-scroller
+        each item in categories
+          hr
+          section.cbp-so-section
+            // bg
+            input(type='hidden', value='/static/images/categories/dolphin.jpg')
+            article.cbp-so-side.cbp-so-side-left
+              a(target='_blank', href='/static/images/categories/dolphin.jpg')
+                h2 !{item.name}
+              p
+                | !{item.description} 
+              p
+                button.btn.btn-info.btn-lg(type='button', data-toggle='modal', data-target='#myModal') Purchase
+            figure.cbp-so-side.cbp-so-side-right
+              a(data-toggle='modal', data-target='#myModal')
+                img(src='' + item.primaryImage + '', alt=''+item.url+'')
     // /products
     // third section - Services
     #services.pad-section
